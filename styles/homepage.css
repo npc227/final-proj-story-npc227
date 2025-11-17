@@ -1,0 +1,20 @@
+/*Layout for smaller devices
+since homepage has 2 main elements, small devices
+should stack them on top of each other*/
+@media (max-width: 400px) {
+  .homepageEls {
+    display: flex;
+    flex-direction: column;    /* stack image above text */
+  }
+
+  
+}
+
+/*Bigger screens should have 2 main elements next to each other
+since they have more horizontal space*/
+@media (min-width: 600px) {
+  .homepageEls {
+    display: flex;
+    flex-direction: row;
+  }
+}
