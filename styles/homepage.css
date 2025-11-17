@@ -1,10 +1,18 @@
 /*Layout for smaller devices
 since homepage has 2 main elements, small devices
 should stack them on top of each other*/
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .homepageEls {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    /*temp gap until I can find better scaling for it*/
+    gap: 100px;
     display: flex;
     flex-direction: column;    /* stack image above text */
+    height: 80vh;
+    margin-top: 20%;
   }
 
   
@@ -14,6 +22,12 @@ should stack them on top of each other*/
 since they have more horizontal space*/
 @media (min-width: 600px) {
   .homepageEls {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    /*temp gap until I can find better scaling for it*/
+    gap: 200px;
     display: flex;
     flex-direction: row;
   }
