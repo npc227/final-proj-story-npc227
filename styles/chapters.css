@@ -4,6 +4,55 @@ font-weight: 400;
 font-style: normal;
 */
 
-body {
-    background-image: url(../styles/images/thinpaper.jpg);
+/*Layout for smaller devices*/
+@media (max-width: 450px) {
+
+    /*Set background*/
+    body {
+        background-image: url(../styles/images/thinpaper.jpg);
+        color: black;
+
+        /*change color of underline in links if they cannot be removed*/
+        a {
+            color: black;
+        }
+    }
+
+    /*centering chapter title*/
+    .chapTitle {
+        font-family: "ink-free", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+  
+}
+
+/*Bigger screens styling*/
+@media (min-width: 600px) {
+
+    /*Set background*/
+    body {
+        background-image: url(../styles/images/thinpaper.jpg);
+        color: black;
+
+        /*change color of underline in links if they cannot be removed*/
+        a {
+            color: black;
+        }
+    }
+    
+    /*centering chapter title*/
+    .chapTitle {
+        font-family: "ink-free", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
 }
