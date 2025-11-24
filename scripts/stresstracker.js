@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let result = smallStressEvent()
         console.log(result)
         console.log("clicked")
+
+        document.getElementById("stresslevel").innerHTML = parseInt(localStorage.getItem("StressLevel"))
+
+        
     })
 
 })
